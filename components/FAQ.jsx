@@ -4,24 +4,29 @@ import { useState } from 'react';
 
 const faqs = [
   {
-    question: 'Comment passer commande sur WhatsApp ?',
+    question: 'Comment commander un chargeur (12W, 20W, 30W) sur WhatsApp ?',
     answer:
-      "Cliquez sur le bouton « Commander sur WhatsApp » sous le produit souhaité. Une conversation WhatsApp s'ouvre avec un message prérempli contenant le nom et le prix de l'article. Envoyez-le pour confirmer votre adresse et recevoir votre suivi.",
+      "Il vous suffit de cliquer sur le bouton « Commander sur WhatsApp » sous l'article de votre choix ou d'écrire directement au 06 14 09 59 99 (+212 614 09 59 99). Un message prérempli avec les détails du produit s'ouvre automatiquement. Nous confirmons votre commande et expédions dans les meilleurs délais.",
   },
   {
-    question: 'Quels sont les délais de livraison ?',
+    question: "Comment se déroule la réparation d'afficheurs et d'écrans chez Gennevilliers ?",
     answer:
-      'Toutes les commandes validées avant 15h sont expédiées le jour même avec un numéro de suivi. La livraison express prend 24 à 48 heures ouvrées partout en France métropolitaine.',
+      "Spécialisée dans la réparation d'afficheurs et d'écrans de smartphones et tablettes, notre équipe technique effectue un diagnostic précis de votre appareil, vous propose un devis transparent et réalise la réparation avec des pièces de haute fiabilité à notre adresse à Casablanca.",
   },
   {
-    question: 'Le chargeur GaN 65W est-il compatible avec iPhone, Samsung et MacBook ?',
+    question: "Quels sont les avantages de votre espace coworking à Casablanca ?",
     answer:
-      "Oui. Nos chargeurs GaN intègrent les protocoles USB-C Power Delivery (PD 3.0) et PPS pour recharger en toute sécurité les iPhone, Samsung Galaxy, Google Pixel, iPad et ordinateurs portables USB-C jusqu'à 65W.",
+      "Notre espace coworking situé 13 Rue Maarakat Ouhoud à Casablanca est un environnement convivial et fonctionnel, équipé de connexion internet haut débit, idéal pour travailler en toute sérénité, étudier, développer vos projets d'entreprise ou échanger dans un cadre professionnel.",
   },
   {
-    question: "Comment fonctionne l'échange sous 14 jours et la garantie ?",
+    question: "Où se trouve Gennevilliers et quels sont vos horaires d'ouverture ?",
     answer:
-      'Vous disposez de 14 jours après réception pour échanger un produit neuf ou non utilisé, et tous nos accessoires sont garantis 24 mois sur simple message WhatsApp.',
+      "Nous sommes situés au 13 RUE MAARAKAT OUHOUD, EX MARECHAL, Casablanca 20080, Casablanca, Morocco. Nous vous accueillons du Lundi au Samedi de 9h00 à 20h00, et nous répondons 7j/7 sur WhatsApp au 06 14 09 59 99.",
+  },
+  {
+    question: 'Quelles sont les puissances de chargeurs disponibles à la vente ?',
+    answer:
+      "Nous proposons une sélection complète de chargeurs certifiés : chargeurs compacts 12W, chargeurs rapides 20W USB-C Power Delivery, adaptateurs secteurs 30W ultra-rapides, ainsi que des chargeurs multi-ports GaN 65W adaptés à tous les smartphones, tablettes et ordinateurs.",
   },
 ];
 
@@ -36,15 +41,17 @@ export default function FAQ() {
     <section id="faq" className="pb-12 lg:pb-section">
       <div className="max-w-4xl mx-auto px-page-margin lg:px-10">
         <div className="text-center mb-10 flex flex-col items-center gap-2">
+          <span className="text-xs font-mono font-semibold text-primary tracking-wider uppercase">
+            Aide &amp; Renseignements
+          </span>
           <h2
             className="font-headline text-headline-md md:text-headline-lg text-on-surface"
             data-design-text-token="headline-lg"
           >
-            Questions Fréquentes
+            Questions Fréquentes — Gennevilliers
           </h2>
           <p className="font-body text-body-md text-muted max-w-xl" data-design-text-token="body-md">
-            Toutes les réponses sur les commandes WhatsApp, la livraison et la compatibilité de nos
-            chargeurs.
+            Toutes les réponses sur nos chargeurs, nos réparations d&apos;écrans et notre espace coworking à Casablanca.
           </p>
         </div>
 
@@ -59,7 +66,7 @@ export default function FAQ() {
                   onClick={() => toggle(idx)}
                   className="faq-toggle w-full px-6 py-5 flex items-center justify-between gap-4 text-left hover:bg-surface-container-low transition-colors duration-state-change"
                 >
-                  <span className="font-title text-title-md text-on-surface" data-design-text-token="title-md">
+                  <span className="font-title text-title-md text-on-surface font-semibold" data-design-text-token="title-md">
                     {faq.question}
                   </span>
                   <span
@@ -72,13 +79,27 @@ export default function FAQ() {
                   </span>
                 </button>
                 <div className={`faq-panel px-6 pb-5 ${isOpen ? '' : 'hidden'}`}>
-                  <p className="font-body text-body-md text-muted text-pretty" data-design-text-token="body-md">
+                  <p className="font-body text-body-md text-muted text-pretty leading-relaxed" data-design-text-token="body-md">
                     {faq.answer}
                   </p>
                 </div>
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-8 text-center">
+          <p className="font-body text-body-sm text-muted">
+            Vous avez une autre question ?{' '}
+            <a
+              href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20j%27ai%20une%20question%20particuli%C3%A8re."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-whatsapp font-semibold hover:underline"
+            >
+              Posez-la directement sur WhatsApp au 06 14 09 59 99 &rarr;
+            </a>
+          </p>
         </div>
       </div>
     </section>

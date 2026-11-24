@@ -12,25 +12,25 @@ export default function FeaturedCollections() {
             />
             <div className="relative z-10 p-8 bg-surface-container/95 flex flex-col gap-2">
               <h3
-                className="font-headline text-headline-md text-on-surface-container"
+                className="font-headline text-headline-md text-on-surface-container font-semibold"
                 data-design-text-token="headline-md"
               >
-                Batterie MagSafe
+                Batterie MagSafe Ultra-Slim
               </h3>
               <p
                 className="font-body text-body-sm text-on-surface-container max-w-sm"
                 data-design-text-token="body-sm"
               >
-                Chaque pièce est conçue pour offrir une charge fiable au quotidien.
+                Chaque accessoire est rigoureusement testé pour offrir une recharge fiable et sécurisée au quotidien.
               </p>
               <div className="pt-1">
                 <a
-                  href="https://wa.me/33600000000?text=Bonjour%2C%20je%20souhaite%20commander%20%3A%20Batterie%20MagSafe%2010000mAh"
+                  href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20la%20Batterie%20MagSafe%2010000mAh."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-label text-label-lg text-on-surface underline underline-offset-4 hover:text-whatsapp transition-colors duration-state-change"
                 >
-                  <span data-design-text-token="label-lg">Commander sur WhatsApp</span>
+                  <span data-design-text-token="label-lg">Commander sur WhatsApp (06 14 09 59 99)</span>
                   <span className="material-symbols-outlined text-body-md" aria-hidden="true">
                     north_east
                   </span>
@@ -48,25 +48,25 @@ export default function FeaturedCollections() {
             />
             <div className="relative z-10 p-8 bg-surface-container/95 flex flex-col gap-2">
               <h3
-                className="font-headline text-headline-md text-on-surface-container"
+                className="font-headline text-headline-md text-on-surface-container font-semibold"
                 data-design-text-token="headline-md"
               >
-                Station MagSafe Pro
+                Station MagSafe &amp; Bureau
               </h3>
               <p
                 className="font-body text-body-sm text-on-surface-container max-w-sm"
                 data-design-text-token="body-sm"
               >
-                Charge magnétique haute vitesse pensée pour votre bureau.
+                Idéale pour votre espace de travail ou de coworking, avec charge magnétique rapide sans fil.
               </p>
               <div className="pt-1">
                 <a
-                  href="https://wa.me/33600000000?text=Bonjour%2C%20je%20souhaite%20commander%20%3A%20Station%20MagSafe%20Pro"
+                  href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20la%20Station%20MagSafe%20Pro."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 font-label text-label-lg text-on-surface underline underline-offset-4 hover:text-whatsapp transition-colors duration-state-change"
                 >
-                  <span data-design-text-token="label-lg">Commander sur WhatsApp</span>
+                  <span data-design-text-token="label-lg">Commander sur WhatsApp (06 14 09 59 99)</span>
                   <span className="material-symbols-outlined text-body-md" aria-hidden="true">
                     north_east
                   </span>

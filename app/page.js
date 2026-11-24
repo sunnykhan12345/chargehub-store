@@ -1,6 +1,7 @@
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Guarantees from '@/components/Guarantees';
+import AboutCompany from '@/components/AboutCompany';
 import Deals from '@/components/Deals';
 import Categories from '@/components/Categories';
 import FeaturedCollections from '@/components/FeaturedCollections';
@@ -19,6 +20,7 @@ export default function Home() {
       <main className="flex-1">
         <Hero />
         <Guarantees />
+        <AboutCompany />
         <Deals />
         <Categories />
         <FeaturedCollections />

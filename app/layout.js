@@ -16,16 +16,17 @@ const sourceCodePro = Source_Code_Pro({
 });
 
 export const metadata = {
-  title: 'Ecomus — Chargeurs Rapides, Câbles USB-C & Accessoires MagSafe',
+  title: "GENNEVILLIERS — Vente de Chargeurs, Réparation d'Écrans & Espace Coworking | Casablanca",
   description:
-    'Accessoires de charge mobile de haute qualité : Chargeurs rapides GaN, câbles tressés USB-C et Lightning, stations et batteries MagSafe. Commande directe sur WhatsApp.',
+    "Gennevilliers vous propose une gamme de services adaptés à vos besoins à Casablanca : Vente de chargeurs (12W, 20W, 30W), réparation d'afficheurs et d'écrans, et espace de coworking convivial. Contact : 0614095999.",
   icons: {
     icon: [
       { url: '/fav.svg', type: 'image/svg+xml' },
       { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/images/logo.png', type: 'image/png' },
     ],
     shortcut: '/fav.svg',
-    apple: '/fav.svg',
+    apple: '/images/logo.png',
   },
 };
 
@@ -35,7 +36,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/fav.svg" type="image/svg+xml" />
         <link rel="shortcut icon" href="/fav.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/fav.svg" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
         <link
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=block"
           rel="stylesheet"

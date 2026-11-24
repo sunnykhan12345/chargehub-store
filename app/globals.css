@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.material-symbols-outlined,
-.material-symbols-rounded,
-.material-symbols-sharp,
-.material-icons {
-  display: inline-block;
-  width: 1em;
-  height: 1em;
-  line-height: 1 !important;
-  box-sizing: content-box;
-  overflow: hidden;
-  white-space: nowrap;
-  direction: ltr;
-  vertical-align: middle;
-}
-
 html {
   scroll-behavior: smooth;
+}
+
+/* Ensure any legacy or fallback material symbols never clip ligatures */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
 }
