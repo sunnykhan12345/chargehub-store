@@ -94,30 +94,41 @@ export default function AboutCompany() {
           </div>
         </div>
 
-        {/* Les 3 Pôles de Services : Chargers for Sale / Coworking Space / Display Repairs */}
+        {/* Les 3 Pôles de Services : Chargers for Sale / Coworking Space / Display Repairs AVEC PHOTOS RÉELLES */}
         <div id="services-coworking" className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Pôle 1 : Vente de Chargeurs */}
-          <div className="rounded-xl border border-outline bg-surface p-6 sm:p-7 flex flex-col justify-between hover:border-primary transition-all duration-state-change group">
-            <div className="flex flex-col gap-4">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors duration-state-change">
-                <Zap className="w-6 h-6 shrink-0" aria-hidden="true" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="text-xs font-mono font-medium text-primary tracking-wider uppercase">
-                  Service 01 &bull; Chargers for Sale
+          {/* Pôle 1 : Vente de Chargeurs (Chargers for Sale) */}
+          <div className="rounded-xl border border-outline bg-surface overflow-hidden flex flex-col justify-between hover:border-primary transition-all duration-state-change group shadow-sm">
+            <div>
+              {/* Photo illustrative réelle */}
+              <div className="aspect-[16/10] w-full overflow-hidden bg-surface-container relative">
+                <img
+                  src="/images/product-adapter-30w.jpg"
+                  alt="Vente de chargeurs 12W, 20W, 30W à Casablanca"
+                  className="w-full h-full object-cover transition-transform duration-surface-enter group-hover:scale-105"
+                />
+                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-xs font-semibold text-primary flex items-center gap-1 shadow-sm">
+                  <Zap className="w-3.5 h-3.5" />
+                  <span>12W &bull; 20W &bull; 30W</span>
                 </span>
-                <h3 className="font-title text-title-lg font-bold text-on-surface">
-                  Vente de Chargeurs
-                </h3>
-                <p className="text-xs font-semibold text-muted">
-                  Puissances disponibles : 12W, 20W &amp; 30W
+              </div>
+              <div className="p-6 flex flex-col gap-3">
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs font-mono font-medium text-primary tracking-wider uppercase">
+                    Service 01 &bull; Chargers for Sale
+                  </span>
+                  <h3 className="font-title text-title-lg font-bold text-on-surface">
+                    Vente de Chargeurs
+                  </h3>
+                  <p className="text-xs font-semibold text-muted">
+                    Puissances disponibles : 12W, 20W &amp; 30W
+                  </p>
+                </div>
+                <p className="font-body text-body-sm text-muted text-pretty">
+                  Des chargeurs certifiés, sécurisés et performants (12W, 20W, 30W et GaN) pour iPhone, Android et ordinateurs, garantissant une recharge rapide sans endommager votre batterie.
                 </p>
               </div>
-              <p className="font-body text-body-sm text-muted text-pretty">
-                Des chargeurs certifiés, sécurisés et performants (12W, 20W, 30W et GaN) pour iPhone, Android et ordinateurs, garantissant une recharge rapide sans endommager votre batterie.
-              </p>
             </div>
-            <div className="pt-6 border-t border-outline-subtle mt-4">
+            <div className="p-6 pt-0">
               <a
                 href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20un%20chargeur%20(12W%2C%2020W%20ou%2030W)."
                 target="_blank"
@@ -130,28 +141,39 @@ export default function AboutCompany() {
             </div>
           </div>
 
-          {/* Pôle 2 : Réparation d'Écrans & Afficheurs */}
-          <div className="rounded-xl border border-outline bg-surface p-6 sm:p-7 flex flex-col justify-between hover:border-primary transition-all duration-state-change group">
-            <div className="flex flex-col gap-4">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors duration-state-change">
-                <Monitor className="w-6 h-6 shrink-0" aria-hidden="true" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="text-xs font-mono font-medium text-primary tracking-wider uppercase">
-                  Service 02 &bull; Display Repairs
+          {/* Pôle 2 : Réparation d'Écrans & Afficheurs (Display Repairs) */}
+          <div className="rounded-xl border border-outline bg-surface overflow-hidden flex flex-col justify-between hover:border-primary transition-all duration-state-change group shadow-sm">
+            <div>
+              {/* Photo illustrative réelle */}
+              <div className="aspect-[16/10] w-full overflow-hidden bg-surface-container relative">
+                <img
+                  src="/images/service-repair-screen.jpg"
+                  alt="Réparation d'afficheurs et d'écrans de smartphones et tablettes"
+                  className="w-full h-full object-cover transition-transform duration-surface-enter group-hover:scale-105"
+                />
+                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-xs font-semibold text-primary flex items-center gap-1 shadow-sm">
+                  <Monitor className="w-3.5 h-3.5" />
+                  <span>Atelier Technique</span>
                 </span>
-                <h3 className="font-title text-title-lg font-bold text-on-surface">
-                  Réparation d&apos;Écrans
-                </h3>
-                <p className="text-xs font-semibold text-muted">
-                  Afficheurs, vitres tactiles &amp; dalles OLED/LCD
+              </div>
+              <div className="p-6 flex flex-col gap-3">
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs font-mono font-medium text-primary tracking-wider uppercase">
+                    Service 02 &bull; Display Repairs
+                  </span>
+                  <h3 className="font-title text-title-lg font-bold text-on-surface">
+                    Réparation d&apos;Écrans
+                  </h3>
+                  <p className="text-xs font-semibold text-muted">
+                    Afficheurs, vitres tactiles &amp; dalles OLED/LCD
+                  </p>
+                </div>
+                <p className="font-body text-body-sm text-muted text-pretty">
+                  Spécialistes reconnus à Casablanca pour le remplacement et la réparation méticuleuse d’afficheurs et d’écrans de smartphones et tablettes, avec diagnostic rigoureux et pièces fiables.
                 </p>
               </div>
-              <p className="font-body text-body-sm text-muted text-pretty">
-                Spécialistes reconnus à Casablanca pour le remplacement et la réparation méticuleuse d’afficheurs et d’écrans de smartphones et tablettes, avec diagnostic rigoureux.
-              </p>
             </div>
-            <div className="pt-6 border-t border-outline-subtle mt-4">
+            <div className="p-6 pt-0">
               <a
                 href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20j%27ai%20besoin%20d%27un%20devis%20pour%20la%20r%C3%A9paration%20d%27un%20afficheur%20ou%20%C3%A9cran."
                 target="_blank"
@@ -164,28 +186,39 @@ export default function AboutCompany() {
             </div>
           </div>
 
-          {/* Pôle 3 : Espace Coworking */}
-          <div className="rounded-xl border border-outline bg-surface p-6 sm:p-7 flex flex-col justify-between hover:border-primary transition-all duration-state-change group">
-            <div className="flex flex-col gap-4">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors duration-state-change">
-                <Users className="w-6 h-6 shrink-0" aria-hidden="true" />
-              </div>
-              <div className="flex flex-col gap-1">
-                <span className="text-xs font-mono font-medium text-primary tracking-wider uppercase">
-                  Service 03 &bull; Coworking Space
+          {/* Pôle 3 : Espace Coworking Casablanca (Coworking Space) */}
+          <div className="rounded-xl border border-outline bg-surface overflow-hidden flex flex-col justify-between hover:border-primary transition-all duration-state-change group shadow-sm">
+            <div>
+              {/* Photo illustrative réelle */}
+              <div className="aspect-[16/10] w-full overflow-hidden bg-surface-container relative">
+                <img
+                  src="/images/service-coworking.jpg"
+                  alt="Espace coworking convivial et fonctionnel à Casablanca"
+                  className="w-full h-full object-cover transition-transform duration-surface-enter group-hover:scale-105"
+                />
+                <span className="absolute top-3 left-3 px-2.5 py-1 rounded-full bg-surface/90 backdrop-blur-sm text-xs font-semibold text-primary flex items-center gap-1 shadow-sm">
+                  <Users className="w-3.5 h-3.5" />
+                  <span>Espace Convivial</span>
                 </span>
-                <h3 className="font-title text-title-lg font-bold text-on-surface">
-                  Espace Coworking
-                </h3>
-                <p className="text-xs font-semibold text-muted">
-                  Convivial, fonctionnel &amp; tout équipé
+              </div>
+              <div className="p-6 flex flex-col gap-3">
+                <div className="flex flex-col gap-1">
+                  <span className="text-xs font-mono font-medium text-primary tracking-wider uppercase">
+                    Service 03 &bull; Coworking Space
+                  </span>
+                  <h3 className="font-title text-title-lg font-bold text-on-surface">
+                    Espace Coworking
+                  </h3>
+                  <p className="text-xs font-semibold text-muted">
+                    Convivial, fonctionnel &amp; tout équipé
+                  </p>
+                </div>
+                <p className="font-body text-body-sm text-muted text-pretty">
+                  Un environnement moderne au 13 Rue Maarakat Ouhoud pour travailler, étudier, développer vos projets d&apos;entreprise ou échanger dans un cadre calme, stimulant et professionnel.
                 </p>
               </div>
-              <p className="font-body text-body-sm text-muted text-pretty">
-                Un environnement moderne au 13 Rue Maarakat Ouhoud pour travailler, étudier, développer vos projets d&apos;entreprise ou échanger dans un cadre calme et professionnel.
-              </p>
             </div>
-            <div className="pt-6 border-t border-outline-subtle mt-4">
+            <div className="p-6 pt-0">
               <a
                 href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20r%C3%A9server%20ou%20visiter%20votre%20espace%20coworking."
                 target="_blank"
