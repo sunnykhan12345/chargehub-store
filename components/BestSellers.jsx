@@ -1,3 +1,7 @@
+'use client';
+
+import { ChevronLeft, ChevronRight, MessageCircle } from 'lucide-react';
+
 export default function BestSellers() {
   return (
     <section id="meilleures-ventes" className="pb-12 lg:pb-section">
@@ -7,7 +11,7 @@ export default function BestSellers() {
             Nos Puissances Vedettes
           </span>
           <h2
-            className="font-headline text-headline-md md:text-headline-lg text-on-surface"
+            className="font-headline text-headline-md md:text-headline-lg text-on-surface font-bold"
             data-design-text-token="headline-lg"
           >
             Chargeurs 12W, 20W &amp; 30W — Meilleures Ventes
@@ -22,11 +26,9 @@ export default function BestSellers() {
           <button
             type="button"
             aria-label="Meilleures ventes précédentes"
-            className="hidden xl:inline-flex items-center justify-center w-9 h-9 rounded-full bg-surface border border-outline text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change absolute -left-5 top-1/3 -translate-y-1/2 z-10"
+            className="hidden xl:inline-flex items-center justify-center w-9 h-9 rounded-full bg-surface border border-outline text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change absolute -left-5 top-1/3 -translate-y-1/2 z-10 shrink-0 shadow-sm"
           >
-            <span className="material-symbols-outlined text-title-lg" aria-hidden="true">
-              chevron_left
-            </span>
+            <ChevronLeft className="w-5 h-5 shrink-0" aria-hidden="true" />
           </button>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
@@ -72,11 +74,9 @@ export default function BestSellers() {
                   href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20l%27Adaptateur%20Secteur%20USB-C%2030W."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp shadow-sm"
                 >
-                  <span className="material-symbols-outlined text-title-md text-whatsapp group-hover:text-on-whatsapp" aria-hidden="true">
-                    chat
-                  </span>
+                  <MessageCircle className="w-4 h-4 text-whatsapp group-hover:text-on-whatsapp shrink-0" aria-hidden="true" />
                   <span data-design-text-token="label-lg">Commander sur WhatsApp</span>
                 </a>
               </footer>
@@ -121,11 +121,9 @@ export default function BestSellers() {
                   href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20le%20Chargeur%20Rapide%2020W%20USB-C%20PD."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp shadow-sm"
                 >
-                  <span className="material-symbols-outlined text-title-md text-whatsapp group-hover:text-on-whatsapp" aria-hidden="true">
-                    chat
-                  </span>
+                  <MessageCircle className="w-4 h-4 text-whatsapp group-hover:text-on-whatsapp shrink-0" aria-hidden="true" />
                   <span data-design-text-token="label-lg">Commander sur WhatsApp</span>
                 </a>
               </footer>
@@ -170,11 +168,9 @@ export default function BestSellers() {
                   href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20le%20Chargeur%20Sans%20Fil%20MagSafe%2015W."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp shadow-sm"
                 >
-                  <span className="material-symbols-outlined text-title-md text-whatsapp group-hover:text-on-whatsapp" aria-hidden="true">
-                    chat
-                  </span>
+                  <MessageCircle className="w-4 h-4 text-whatsapp group-hover:text-on-whatsapp shrink-0" aria-hidden="true" />
                   <span data-design-text-token="label-lg">Commander sur WhatsApp</span>
                 </a>
               </footer>
@@ -219,11 +215,9 @@ export default function BestSellers() {
                   href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20le%20Chargeur%20Compact%2012W."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp"
+                  className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-sm bg-surface text-on-surface border border-outline font-label text-label-lg transition-colors duration-state-change ease-state-change hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp shadow-sm"
                 >
-                  <span className="material-symbols-outlined text-title-md text-whatsapp group-hover:text-on-whatsapp" aria-hidden="true">
-                    chat
-                  </span>
+                  <MessageCircle className="w-4 h-4 text-whatsapp group-hover:text-on-whatsapp shrink-0" aria-hidden="true" />
                   <span data-design-text-token="label-lg">Commander sur WhatsApp</span>
                 </a>
               </footer>
@@ -234,11 +228,9 @@ export default function BestSellers() {
           <button
             type="button"
             aria-label="Meilleures ventes suivantes"
-            className="hidden xl:inline-flex items-center justify-center w-9 h-9 rounded-full bg-surface border border-outline text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change absolute -right-5 top-1/3 -translate-y-1/2 z-10"
+            className="hidden xl:inline-flex items-center justify-center w-9 h-9 rounded-full bg-surface border border-outline text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change absolute -right-5 top-1/3 -translate-y-1/2 z-10 shrink-0 shadow-sm"
           >
-            <span className="material-symbols-outlined text-title-lg" aria-hidden="true">
-              chevron_right
-            </span>
+            <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
           </button>
         </div>
       </div>
