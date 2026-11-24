@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Phone, MessageCircle, MapPin, Mail, ArrowRight, Check } from 'lucide-react';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -29,7 +30,7 @@ export default function Contact() {
                 Contact &amp; Localisation
               </span>
               <h2
-                className="font-headline text-headline-md md:text-headline-lg text-on-surface"
+                className="font-headline text-headline-md md:text-headline-lg text-on-surface font-bold"
                 data-design-text-token="headline-lg"
               >
                 Nous Contacter
@@ -40,11 +41,9 @@ export default function Contact() {
             </div>
 
             {/* Carte WhatsApp */}
-            <article className="rounded-lg bg-surface-container p-6 flex items-start gap-4">
-              <div className="w-11 h-11 rounded-full bg-surface border border-outline flex items-center justify-center shrink-0 text-whatsapp">
-                <span className="material-symbols-outlined text-title-lg" aria-hidden="true">
-                  chat
-                </span>
+            <article className="rounded-lg bg-surface-container p-6 flex items-start gap-4 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-surface border border-outline flex items-center justify-center shrink-0 text-whatsapp shadow-sm">
+                <MessageCircle className="w-6 h-6 shrink-0" aria-hidden="true" />
               </div>
               <div className="flex flex-col gap-1.5">
                 <h3
@@ -64,17 +63,13 @@ export default function Contact() {
                     className="inline-flex items-center gap-1.5 font-label text-label-lg text-whatsapp underline underline-offset-4 font-semibold"
                   >
                     <span>06 14 09 59 99</span>
-                    <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                      north_east
-                    </span>
+                    <ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" />
                   </a>
                   <a
                     href="tel:0614095999"
-                    className="inline-flex items-center gap-1 font-label text-label-sm text-muted hover:text-on-surface"
+                    className="inline-flex items-center gap-1.5 font-label text-label-sm text-muted hover:text-on-surface font-medium"
                   >
-                    <span className="material-symbols-outlined text-sm" aria-hidden="true">
-                      call
-                    </span>
+                    <Phone className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
                     <span>Appel direct</span>
                   </a>
                 </div>
@@ -82,11 +77,9 @@ export default function Contact() {
             </article>
 
             {/* Carte Adresse Casablanca */}
-            <article className="rounded-lg border border-outline p-6 flex items-start gap-4">
-              <div className="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
-                <span className="material-symbols-outlined text-title-lg" aria-hidden="true">
-                  location_on
-                </span>
+            <article className="rounded-lg border border-outline p-6 flex items-start gap-4 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+                <MapPin className="w-6 h-6 shrink-0" aria-hidden="true" />
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="font-title text-title-md text-on-surface font-semibold" data-design-text-token="title-md">
@@ -105,11 +98,9 @@ export default function Contact() {
             </article>
 
             {/* Carte Email */}
-            <article className="rounded-lg border border-outline p-6 flex items-start gap-4">
-              <div className="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
-                <span className="material-symbols-outlined text-title-lg" aria-hidden="true">
-                  mail
-                </span>
+            <article className="rounded-lg border border-outline p-6 flex items-start gap-4 shadow-sm">
+              <div className="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center shrink-0 text-primary">
+                <Mail className="w-6 h-6 shrink-0" aria-hidden="true" />
               </div>
               <div className="flex flex-col gap-1">
                 <h3 className="font-title text-title-md text-on-surface font-semibold" data-design-text-token="title-md">
@@ -129,7 +120,7 @@ export default function Contact() {
           </div>
 
           {/* Formulaire de contact */}
-          <div className="lg:col-span-7 rounded-lg border border-outline p-6 md:p-8 bg-surface">
+          <div className="lg:col-span-7 rounded-lg border border-outline p-6 md:p-8 bg-surface shadow-sm">
             <div className="flex flex-col gap-1 mb-6">
               <h3
                 className="font-headline text-headline-md text-on-surface font-semibold"
@@ -242,12 +233,10 @@ export default function Contact() {
               <div className="flex flex-wrap items-center justify-between gap-4 pt-1">
                 <button
                   type="submit"
-                  className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-primary text-on-primary font-label text-label-lg hover:bg-secondary transition-colors duration-state-change"
+                  className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-primary text-on-primary font-label text-label-lg hover:bg-secondary transition-colors duration-state-change shadow-sm shrink-0"
                 >
                   <span data-design-text-token="label-lg">Envoyer le message</span>
-                  <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                    north_east
-                  </span>
+                  <ArrowRight className="w-4 h-4 shrink-0" aria-hidden="true" />
                 </button>
                 <a
                   href="https://wa.me/212614095999?text=Bonjour%20Rachid%2C%20je%20souhaite%20une%20r%C3%A9ponse%20rapide%20via%20WhatsApp."
@@ -255,19 +244,18 @@ export default function Contact() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 text-whatsapp text-sm font-semibold hover:underline"
                 >
-                  <span className="material-symbols-outlined text-base" aria-hidden="true">
-                    chat
-                  </span>
+                  <MessageCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
                   <span>Réponse encore plus rapide sur WhatsApp</span>
                 </a>
                 {submitted && (
                   <p
                     id="form-feedback"
-                    className="w-full font-body text-body-sm text-whatsapp bg-whatsapp/10 p-3 rounded-sm"
+                    className="w-full font-body text-body-sm text-whatsapp bg-whatsapp/10 p-3 rounded-sm flex items-center gap-2"
                     role="status"
                     data-design-text-token="body-sm"
                   >
-                    Merci ! Votre message a bien été envoyé. Rachid de Gennevilliers reviendra vers vous très vite.
+                    <Check className="w-4 h-4 shrink-0" aria-hidden="true" />
+                    <span>Merci ! Votre message a bien été envoyé. Rachid de Gennevilliers reviendra vers vous très vite.</span>
                   </p>
                 )}
               </div>

@@ -1,25 +1,26 @@
 'use client';
 
 import { useState } from 'react';
+import { Star, ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 const reviewsData = [
   {
     quote:
-      "« Des chargeurs ultra-rapides et des câbles tressés d'une solidité remarquable. La commande sur WhatsApp a été simple et la livraison très rapide. »",
+      "« Des chargeurs ultra-rapides et des câbles tressés d'une solidité remarquable. La commande sur WhatsApp a été simple et la livraison très rapide à Casablanca. »",
     author: 'Lucas Martin',
-    item: 'Article commandé : Station Charge 3-en-1',
+    item: 'Article commandé : Adaptateur Secteur USB-C 30W',
   },
   {
     quote:
-      "« Le chargeur GaN 65W recharge mon ordinateur et mon téléphone en même temps sans chauffer. Service client très réactif sur WhatsApp. »",
-    author: 'Camille Bernard',
-    item: 'Article commandé : Chargeur Rapide GaN 65W',
+      "« J'ai fait réparer l'écran de mon téléphone chez Gennevilliers : travail soigné, rapide et affichage impeccable comme à l'origine. Service au top au 13 Rue Maarakat Ouhoud. »",
+    author: 'Mehdi Benjelloun',
+    item: 'Service : Réparation d’Afficheur & Écran',
   },
   {
     quote:
-      "« Enfin des câbles iPhone et USB-C qui ne s'abîment pas au bout d'un mois. Je recommande les yeux fermés. »",
-    author: 'Thomas Petit',
-    item: 'Article commandé : Câble USB-C Tressé 2m',
+      "« Espace coworking très calme, convivial et fonctionnel à Casablanca. Connexion ultra-rapide et accueil chaleureux de Rachid. Je recommande vivement ! »",
+    author: 'Sara El Amrani',
+    item: 'Espace Coworking Gennevilliers',
   },
 ];
 
@@ -39,38 +40,30 @@ export default function Reviews() {
   return (
     <section id="avis" className="pb-12 lg:pb-section">
       <div className="max-w-7xl mx-auto px-page-margin lg:px-10">
-        <div className="rounded-lg bg-surface-dark text-on-surface-dark p-8 md:p-12 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+        <div className="rounded-lg bg-surface-dark text-on-surface-dark p-8 md:p-12 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-lg">
           <div className="lg:col-span-8 flex flex-col gap-5">
             <div className="flex flex-col gap-2">
-              <span
-                className="material-symbols-outlined text-headline-lg text-muted-dark"
-                aria-hidden="true"
-              >
-                format_quote
-              </span>
+              <Quote className="w-10 h-10 text-primary shrink-0 opacity-80" aria-hidden="true" />
               <p
-                className="font-label text-label-sm uppercase tracking-widest text-muted-dark"
+                className="font-label text-label-sm uppercase tracking-widest text-muted-dark font-semibold"
                 data-design-text-token="label-sm"
               >
-                AVIS DE NOS CLIENTS
+                AVIS DE NOS CLIENTS &bull; GENNEVILLIERS
               </p>
               <div className="flex items-center gap-1 text-star" aria-label="Note 5 sur 5">
                 {[...Array(5)].map((_, i) => (
-                  <span
+                  <Star
                     key={i}
-                    className="material-symbols-outlined text-title-lg"
-                    style={{ fontVariationSettings: "'FILL' 1" }}
+                    className="w-5 h-5 fill-star text-star shrink-0"
                     aria-hidden="true"
-                  >
-                    star
-                  </span>
+                  />
                 ))}
               </div>
             </div>
 
             <blockquote
               id="review-quote"
-              className="font-headline text-headline-md text-on-surface-dark max-w-2xl text-pretty min-h-[90px]"
+              className="font-headline text-headline-md text-on-surface-dark max-w-2xl text-pretty min-h-[90px] leading-relaxed"
               data-design-text-token="headline-md"
             >
               {current.quote}
@@ -79,7 +72,7 @@ export default function Reviews() {
             <div className="flex flex-col gap-0.5">
               <p
                 id="review-author"
-                className="font-label text-label-lg text-on-surface-dark"
+                className="font-label text-label-lg text-on-surface-dark font-semibold"
                 data-design-text-token="label-lg"
               >
                 {current.author}
@@ -99,22 +92,18 @@ export default function Reviews() {
                 type="button"
                 aria-label="Avis précédent"
                 onClick={prevReview}
-                className="w-9 h-9 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change"
+                className="w-10 h-10 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change shrink-0"
               >
-                <span className="material-symbols-outlined text-title-md" aria-hidden="true">
-                  chevron_left
-                </span>
+                <ChevronLeft className="w-5 h-5 shrink-0" aria-hidden="true" />
               </button>
               <button
                 id="review-next"
                 type="button"
                 aria-label="Avis suivant"
                 onClick={nextReview}
-                className="w-9 h-9 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change"
+                className="w-10 h-10 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change shrink-0"
               >
-                <span className="material-symbols-outlined text-title-md" aria-hidden="true">
-                  chevron_right
-                </span>
+                <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
               </button>
             </div>
           </div>
@@ -124,8 +113,8 @@ export default function Reviews() {
               <div className="absolute inset-0 rounded-lg border border-muted-dark/40 rotate-3"></div>
               <img
                 src="/images/testimonial-avatar.jpg"
-                alt="Portrait client satisfait"
-                className="relative w-full h-full object-cover rounded-lg"
+                alt="Portrait client satisfait Gennevilliers"
+                className="relative w-full h-full object-cover rounded-lg shadow-md"
               />
             </div>
           </div>

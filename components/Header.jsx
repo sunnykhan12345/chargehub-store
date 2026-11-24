@@ -134,9 +134,8 @@ export default function Header() {
       {/* Drawer mobile */}
       <div
         id="mobile-menu"
-        className={`${
-          mobileMenuOpen ? 'block' : 'hidden'
-        } lg:hidden border-t border-outline-subtle bg-surface px-page-margin py-4`}
+        className={`${mobileMenuOpen ? 'block' : 'hidden'
+          } lg:hidden border-t border-outline-subtle bg-surface px-page-margin py-4`}
       >
         <nav aria-label="Menu mobile" className="flex flex-col gap-3">
           <a

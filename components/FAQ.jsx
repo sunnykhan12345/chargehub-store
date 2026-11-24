@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { ChevronDown, MessageCircle } from 'lucide-react';
 
 const faqs = [
   {
@@ -45,7 +46,7 @@ export default function FAQ() {
             Aide &amp; Renseignements
           </span>
           <h2
-            className="font-headline text-headline-md md:text-headline-lg text-on-surface"
+            className="font-headline text-headline-md md:text-headline-lg text-on-surface font-bold"
             data-design-text-token="headline-lg"
           >
             Questions Fréquentes — Gennevilliers
@@ -59,7 +60,7 @@ export default function FAQ() {
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
-              <div key={idx} className="rounded-lg border border-outline bg-surface overflow-hidden">
+              <div key={idx} className="rounded-lg border border-outline bg-surface overflow-hidden shadow-sm">
                 <button
                   type="button"
                   aria-expanded={isOpen}
@@ -69,14 +70,12 @@ export default function FAQ() {
                   <span className="font-title text-title-md text-on-surface font-semibold" data-design-text-token="title-md">
                     {faq.question}
                   </span>
-                  <span
-                    className={`material-symbols-outlined text-title-lg text-on-surface shrink-0 transition-transform duration-state-change ${
+                  <ChevronDown
+                    className={`w-5 h-5 text-on-surface shrink-0 transition-transform duration-state-change ${
                       isOpen ? 'rotate-180' : ''
                     }`}
                     aria-hidden="true"
-                  >
-                    expand_more
-                  </span>
+                  />
                 </button>
                 <div className={`faq-panel px-6 pb-5 ${isOpen ? '' : 'hidden'}`}>
                   <p className="font-body text-body-md text-muted text-pretty leading-relaxed" data-design-text-token="body-md">
@@ -95,9 +94,10 @@ export default function FAQ() {
               href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20j%27ai%20une%20question%20particuli%C3%A8re."
               target="_blank"
               rel="noopener noreferrer"
-              className="text-whatsapp font-semibold hover:underline"
+              className="text-whatsapp font-semibold hover:underline inline-flex items-center gap-1.5"
             >
-              Posez-la directement sur WhatsApp au 06 14 09 59 99 &rarr;
+              <MessageCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
+              <span>Posez-la directement sur WhatsApp au 06 14 09 59 99 &rarr;</span>
             </a>
           </p>
         </div>

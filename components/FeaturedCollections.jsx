@@ -1,10 +1,12 @@
+import { MessageCircle, ArrowUpRight } from 'lucide-react';
+
 export default function FeaturedCollections() {
   return (
     <section aria-label="Collections phares" className="pb-12 lg:pb-section">
       <div className="max-w-7xl mx-auto px-page-margin lg:px-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
           {/* Bannière gauche */}
-          <article className="rounded-lg bg-surface-container overflow-hidden relative min-h-[420px] flex flex-col justify-end group">
+          <article className="rounded-lg bg-surface-container overflow-hidden relative min-h-[420px] flex flex-col justify-end group shadow-sm">
             <img
               src="/images/banner-collection-battery.jpg"
               alt="Batterie MagSafe 10000mAh tenue en main"
@@ -28,19 +30,18 @@ export default function FeaturedCollections() {
                   href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20la%20Batterie%20MagSafe%2010000mAh."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 font-label text-label-lg text-on-surface underline underline-offset-4 hover:text-whatsapp transition-colors duration-state-change"
+                  className="inline-flex items-center gap-1.5 font-label text-label-lg text-on-surface underline underline-offset-4 hover:text-whatsapp transition-colors duration-state-change font-semibold"
                 >
+                  <MessageCircle className="w-4 h-4 text-whatsapp shrink-0" aria-hidden="true" />
                   <span data-design-text-token="label-lg">Commander sur WhatsApp (06 14 09 59 99)</span>
-                  <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                    north_east
-                  </span>
+                  <ArrowUpRight className="w-4 h-4 shrink-0" aria-hidden="true" />
                 </a>
               </div>
             </div>
           </article>
 
           {/* Bannière droite */}
-          <article className="rounded-lg bg-surface-container overflow-hidden relative min-h-[420px] flex flex-col justify-end group">
+          <article className="rounded-lg bg-surface-container overflow-hidden relative min-h-[420px] flex flex-col justify-end group shadow-sm">
             <img
               src="/images/banner-collection-station.jpg"
               alt="Station de charge MagSafe Pro orange et aluminium"
@@ -64,12 +65,11 @@ export default function FeaturedCollections() {
                   href="https://wa.me/212614095999?text=Bonjour%20Gennevilliers%2C%20je%20souhaite%20commander%20la%20Station%20MagSafe%20Pro."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 font-label text-label-lg text-on-surface underline underline-offset-4 hover:text-whatsapp transition-colors duration-state-change"
+                  className="inline-flex items-center gap-1.5 font-label text-label-lg text-on-surface underline underline-offset-4 hover:text-whatsapp transition-colors duration-state-change font-semibold"
                 >
+                  <MessageCircle className="w-4 h-4 text-whatsapp shrink-0" aria-hidden="true" />
                   <span data-design-text-token="label-lg">Commander sur WhatsApp (06 14 09 59 99)</span>
-                  <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                    north_east
-                  </span>
+                  <ArrowUpRight className="w-4 h-4 shrink-0" aria-hidden="true" />
                 </a>
               </div>
             </div>

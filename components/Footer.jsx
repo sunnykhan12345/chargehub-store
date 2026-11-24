@@ -1,5 +1,7 @@
 'use client';
 
+import { Phone, MessageCircle, Mail, ChevronUp, ArrowUpRight } from 'lucide-react';
+
 export default function Footer() {
   return (
     <footer className="border-t border-outline-subtle bg-surface pt-12 pb-8">
@@ -36,10 +38,9 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 font-label text-label-lg text-whatsapp underline underline-offset-4 hover:opacity-80 transition-opacity font-semibold"
               >
+                <MessageCircle className="w-4 h-4 shrink-0 text-whatsapp" aria-hidden="true" />
                 <span data-design-text-token="label-lg">Commander sur WhatsApp : 06 14 09 59 99</span>
-                <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                  north_east
-                </span>
+                <ArrowUpRight className="w-4 h-4 shrink-0" aria-hidden="true" />
               </a>
             </div>
             <div className="flex items-center gap-2 pt-2">
@@ -47,11 +48,9 @@ export default function Footer() {
                 href="tel:0614095999"
                 aria-label="Appeler directement"
                 title="06 14 09 59 99"
-                className="w-8 h-8 rounded-full border border-outline flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change"
+                className="w-9 h-9 rounded-full border border-outline flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change shrink-0"
               >
-                <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                  call
-                </span>
+                <Phone className="w-4 h-4 shrink-0" aria-hidden="true" />
               </a>
               <a
                 href="https://wa.me/212614095999"
@@ -59,21 +58,17 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 aria-label="WhatsApp"
                 title="WhatsApp 06 14 09 59 99"
-                className="w-8 h-8 rounded-full border border-outline flex items-center justify-center text-on-surface hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp transition-colors duration-state-change"
+                className="w-9 h-9 rounded-full border border-outline flex items-center justify-center text-on-surface hover:bg-whatsapp hover:text-on-whatsapp hover:border-whatsapp transition-colors duration-state-change shrink-0"
               >
-                <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                  chat
-                </span>
+                <MessageCircle className="w-4 h-4 shrink-0" aria-hidden="true" />
               </a>
               <a
                 href="mailto:rachid@gennevilliers.mav"
                 aria-label="Email"
                 title="rachid@gennevilliers.mav"
-                className="w-8 h-8 rounded-full border border-outline flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change"
+                className="w-9 h-9 rounded-full border border-outline flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change shrink-0"
               >
-                <span className="material-symbols-outlined text-body-md" aria-hidden="true">
-                  mail
-                </span>
+                <Mail className="w-4 h-4 shrink-0" aria-hidden="true" />
               </a>
             </div>
           </div>
@@ -109,9 +104,10 @@ export default function Footer() {
                   href="https://wa.me/212614095999"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-on-surface transition-colors font-semibold text-whatsapp"
+                  className="hover:text-on-surface transition-colors font-semibold text-whatsapp flex items-center gap-1.5"
                 >
-                  Commande Rapide WhatsApp (0614095999)
+                  <MessageCircle className="w-3.5 h-3.5 shrink-0" aria-hidden="true" />
+                  <span>Commande Rapide (06 14 09 59 99)</span>
                 </a>
               </li>
             </ul>
@@ -187,11 +183,9 @@ export default function Footer() {
             <a
               href="#accueil"
               aria-label="Haut de page"
-              className="w-9 h-9 rounded-sm border border-outline flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change"
+              className="w-9 h-9 rounded-sm border border-outline flex items-center justify-center text-on-surface hover:bg-primary hover:text-on-primary transition-colors duration-state-change shrink-0"
             >
-              <span className="material-symbols-outlined text-title-md" aria-hidden="true">
-                keyboard_arrow_up
-              </span>
+              <ChevronUp className="w-5 h-5 shrink-0" aria-hidden="true" />
             </a>
           </div>
         </div>
