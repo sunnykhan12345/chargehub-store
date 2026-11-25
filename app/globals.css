@@ -4,6 +4,12 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
 }
 
 /* Ensure any legacy or fallback material symbols never clip ligatures */

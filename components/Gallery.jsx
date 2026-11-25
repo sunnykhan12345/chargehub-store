@@ -1,23 +1,23 @@
 export default function Gallery() {
   return (
-    <section className="pb-14 lg:pb-section">
-      <div className="max-w-7xl mx-auto px-page-margin lg:px-10">
-        <div className="text-center mb-8 flex flex-col items-center gap-2">
+    <section className="pb-10 sm:pb-14 lg:pb-section">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="text-center mb-6 sm:mb-8 flex flex-col items-center gap-2">
           <span className="text-xs font-mono font-semibold text-primary uppercase tracking-wider">
             Galerie &bull; Gennevilliers Casablanca
           </span>
           <h2
-            className="font-headline text-headline-md md:text-headline-lg text-on-surface font-bold"
+            className="font-headline text-xl sm:text-headline-md md:text-headline-lg text-on-surface font-bold"
             data-design-text-token="headline-lg"
           >
             Nos Activités en Images
           </h2>
-          <p className="font-body text-body-md text-muted max-w-xl" data-design-text-token="body-md">
+          <p className="font-body text-xs sm:text-body-md text-muted max-w-xl" data-design-text-token="body-md">
             Découvrez nos chargeurs en vente, notre atelier de réparation d&apos;écrans et notre espace coworking à Casablanca.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2.5 sm:gap-4">
           {/* Image 1 : Chargeur Sans fil */}
           <a
             href="#bonnes-affaires"

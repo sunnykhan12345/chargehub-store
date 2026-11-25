@@ -39,24 +39,24 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="pb-12 lg:pb-section">
-      <div className="max-w-4xl mx-auto px-page-margin lg:px-10">
-        <div className="text-center mb-10 flex flex-col items-center gap-2">
+    <section id="faq" className="pb-10 sm:pb-12 lg:pb-section">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="text-center mb-6 sm:mb-10 flex flex-col items-center gap-2">
           <span className="text-xs font-mono font-semibold text-primary tracking-wider uppercase">
             Aide &amp; Renseignements
           </span>
           <h2
-            className="font-headline text-headline-md md:text-headline-lg text-on-surface font-bold"
+            className="font-headline text-xl sm:text-headline-md md:text-headline-lg text-on-surface font-bold"
             data-design-text-token="headline-lg"
           >
             Questions Fréquentes — Gennevilliers
           </h2>
-          <p className="font-body text-body-md text-muted max-w-xl" data-design-text-token="body-md">
+          <p className="font-body text-xs sm:text-body-md text-muted max-w-xl" data-design-text-token="body-md">
             Toutes les réponses sur nos chargeurs, nos réparations d&apos;écrans et notre espace coworking à Casablanca.
           </p>
         </div>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-2.5 sm:gap-3">
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
@@ -65,20 +65,20 @@ export default function FAQ() {
                   type="button"
                   aria-expanded={isOpen}
                   onClick={() => toggle(idx)}
-                  className="faq-toggle w-full px-6 py-5 flex items-center justify-between gap-4 text-left hover:bg-surface-container-low transition-colors duration-state-change"
+                  className="faq-toggle w-full px-4 sm:px-6 py-3.5 sm:py-5 flex items-center justify-between gap-3 sm:gap-4 text-left hover:bg-surface-container-low transition-colors duration-state-change"
                 >
-                  <span className="font-title text-title-md text-on-surface font-semibold" data-design-text-token="title-md">
+                  <span className="font-title text-sm sm:text-title-md text-on-surface font-semibold" data-design-text-token="title-md">
                     {faq.question}
                   </span>
                   <ChevronDown
-                    className={`w-5 h-5 text-on-surface shrink-0 transition-transform duration-state-change ${
+                    className={`w-4 h-4 sm:w-5 sm:h-5 text-on-surface shrink-0 transition-transform duration-state-change ${
                       isOpen ? 'rotate-180' : ''
                     }`}
                     aria-hidden="true"
                   />
                 </button>
-                <div className={`faq-panel px-6 pb-5 ${isOpen ? '' : 'hidden'}`}>
-                  <p className="font-body text-body-md text-muted text-pretty leading-relaxed" data-design-text-token="body-md">
+                <div className={`faq-panel px-4 sm:px-6 pb-4 sm:pb-5 ${isOpen ? '' : 'hidden'}`}>
+                  <p className="font-body text-xs sm:text-body-md text-muted text-pretty leading-relaxed" data-design-text-token="body-md">
                     {faq.answer}
                   </p>
                 </div>

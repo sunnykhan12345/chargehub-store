@@ -15,6 +15,11 @@ const sourceCodePro = Source_Code_Pro({
   display: 'swap',
 });
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
+
 export const metadata = {
   title: "GENNEVILLIERS — Vente de Chargeurs, Réparation d'Écrans & Espace Coworking | Casablanca",
   description:
@@ -34,6 +39,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className={`${plusJakartaSans.variable} ${sourceCodePro.variable} scroll-smooth`}>
       <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/fav.svg" type="image/svg+xml" />
         <link rel="shortcut icon" href="/fav.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/images/logo.png" />
@@ -42,7 +48,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
       </head>
-      <body className="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col">
+      <body className="bg-surface text-on-surface font-body antialiased min-h-screen flex flex-col overflow-x-hidden">
         {children}
       </body>
     </html>

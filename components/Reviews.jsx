@@ -38,14 +38,14 @@ export default function Reviews() {
   const current = reviewsData[reviewIdx];
 
   return (
-    <section id="avis" className="pb-12 lg:pb-section">
-      <div className="max-w-7xl mx-auto px-page-margin lg:px-10">
-        <div className="rounded-lg bg-surface-dark text-on-surface-dark p-8 md:p-12 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-lg">
-          <div className="lg:col-span-8 flex flex-col gap-5">
+    <section id="avis" className="pb-10 sm:pb-12 lg:pb-section">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="rounded-lg bg-surface-dark text-on-surface-dark p-5 sm:p-8 md:p-12 lg:p-14 grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-center shadow-lg overflow-hidden">
+          <div className="lg:col-span-8 flex flex-col gap-4 sm:gap-5">
             <div className="flex flex-col gap-2">
-              <Quote className="w-10 h-10 text-primary shrink-0 opacity-80" aria-hidden="true" />
+              <Quote className="w-8 h-8 sm:w-10 sm:h-10 text-primary shrink-0 opacity-80" aria-hidden="true" />
               <p
-                className="font-label text-label-sm uppercase tracking-widest text-muted-dark font-semibold"
+                className="font-label text-xs sm:text-label-sm uppercase tracking-widest text-muted-dark font-semibold"
                 data-design-text-token="label-sm"
               >
                 AVIS DE NOS CLIENTS &bull; GENNEVILLIERS
@@ -54,7 +54,7 @@ export default function Reviews() {
                 {[...Array(5)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-5 h-5 fill-star text-star shrink-0"
+                    className="w-4 h-4 sm:w-5 sm:h-5 fill-star text-star shrink-0"
                     aria-hidden="true"
                   />
                 ))}
@@ -63,7 +63,7 @@ export default function Reviews() {
 
             <blockquote
               id="review-quote"
-              className="font-headline text-headline-md text-on-surface-dark max-w-2xl text-pretty min-h-[90px] leading-relaxed"
+              className="font-headline text-sm sm:text-lg md:text-headline-md text-on-surface-dark max-w-2xl text-pretty min-h-[60px] sm:min-h-[90px] leading-relaxed"
               data-design-text-token="headline-md"
             >
               {current.quote}
@@ -72,14 +72,14 @@ export default function Reviews() {
             <div className="flex flex-col gap-0.5">
               <p
                 id="review-author"
-                className="font-label text-label-lg text-on-surface-dark font-semibold"
+                className="font-label text-xs sm:text-label-lg text-on-surface-dark font-semibold"
                 data-design-text-token="label-lg"
               >
                 {current.author}
               </p>
               <p
                 id="review-item"
-                className="font-body text-body-sm text-muted-dark"
+                className="font-body text-[11px] sm:text-body-sm text-muted-dark"
                 data-design-text-token="body-sm"
               >
                 {current.item}
@@ -92,25 +92,25 @@ export default function Reviews() {
                 type="button"
                 aria-label="Avis précédent"
                 onClick={prevReview}
-                className="w-10 h-10 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change shrink-0"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change shrink-0"
               >
-                <ChevronLeft className="w-5 h-5 shrink-0" aria-hidden="true" />
+                <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" aria-hidden="true" />
               </button>
               <button
                 id="review-next"
                 type="button"
                 aria-label="Avis suivant"
                 onClick={nextReview}
-                className="w-10 h-10 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change shrink-0"
+                className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-muted-dark text-on-surface-dark flex items-center justify-center hover:bg-on-surface-dark hover:text-surface-dark transition-colors duration-state-change shrink-0"
               >
-                <ChevronRight className="w-5 h-5 shrink-0" aria-hidden="true" />
+                <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" aria-hidden="true" />
               </button>
             </div>
           </div>
 
           <div className="lg:col-span-4 flex justify-center lg:justify-end">
-            <div className="relative w-56 h-56 sm:w-64 sm:h-64">
-              <div className="absolute inset-0 rounded-lg border border-muted-dark/40 rotate-3"></div>
+            <div className="relative w-36 h-36 sm:w-56 sm:h-56 md:w-64 md:h-64">
+              <div className="absolute inset-0 rounded-lg border border-muted-dark/40 rotate-3 pointer-events-none"></div>
               <img
                 src="/images/testimonial-avatar.jpg"
                 alt="Portrait client satisfait Gennevilliers"
